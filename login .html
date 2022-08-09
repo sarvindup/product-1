@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/755660829e.js" crossorigin="anonymous"></script>
+    <title>Eva Dreams | Online Shopping</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="">EVA DREAMS</a>
+      </div>
+      <div class="menu">
+        <input type="checkbox" id="checking">
+        <label for="checking">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+          <li><input type="text" placeholder="Search Items"></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Shopping Bag</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Start-->
+  <div class="login">
+    <div class="login-box">
+      <h1 class="title">Login</h1>
+      <div class="Username">
+        <p>Username</p>
+        <input type="username" class="user-box" placeholder="Enter Your Username">
+      </div>
+      <div class="password">
+        <p>Password</p>
+        <input type="password" class="user-box" placeholder="Enter Your Password">
+      </div>
+      <div class="me">
+        <input type="checkbox" value="login">
+        <p>Remember Me</p>
+      </div>
+      <div class="login-btn">
+        <button>Login</button>
+      </div>
+      <div class="for">
+        <ul>
+          <li><a href="">Forgot Password ?</a></li>
+        </ul>
+        <div class="for-2">
+            <li>
+              <a href="" class="do">Don't Have An Account ?</a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-->  
+  <!--Start-->
+  <!--end-->  
+  <!--Start-->
+  <!--end-->  
+  <!--Start-->
+  <!--end-->  
+  <!--Start-->
+  <!--end-->
+  <!--Start-->
+  <!--end-->
+  <!--Start-->
+  <!--end-->
+  <!--Start-->
+  <!--end-->
+</body>
+</html>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
